@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Rental Locations"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/spinnerRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etLocationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location Name"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etLocationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location (Lat,Lng)"
+            android:focusable="false"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnSelectMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Location on Map"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#03A9F4"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btnAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Rental Location"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFF"
+            android:layout_marginBottom="16dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:id="@+id/tableLocations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:padding="8dp"/>
+            </ScrollView>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

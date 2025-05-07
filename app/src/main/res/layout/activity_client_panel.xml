@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F9F9"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/client_icon"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_background"
+        android:padding="8dp"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:text="Client Panel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBookCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#009688"
+
+        android:icon="@drawable/ic_car"
+        android:onClick="bookCar"
+        android:text="Book a Car"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnManageMyBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+
+
+        android:icon="@drawable/ic_book"
+        android:onClick="myBookings"
+        android:text="My Bookings"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUseQRCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF5722"
+
+
+        android:icon="@drawable/ic_qr_code"
+        android:onClick="manageMyBookingCar"
+        android:text="Use QR Code"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFA000"
+
+
+        android:icon="@drawable/ic_add"
+        android:onClick="goAddCar"
+        android:text="Add Car"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16dp" />
+
+</LinearLayout>

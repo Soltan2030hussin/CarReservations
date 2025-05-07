@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Region Spinner -->
+        <TextView android:text="Select Region"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- City Spinner -->
+        <TextView android:text="Select City"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Rental Location Spinner -->
+        <TextView android:text="Select Rental Location (Optional)"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Select Pickup Location -->
+        <Button
+            android:id="@+id/btnSelectMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Pickup Location from Map"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFF" />
+
+        <!-- Car Brand -->
+
+        <!-- Car Model -->
+        <EditText
+            android:id="@+id/etCarModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Model"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Car Year -->
+        <EditText
+            android:id="@+id/etCarYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Year"
+            android:inputType="number"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Car Price -->
+        <EditText
+            android:id="@+id/etCarPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price per Day"
+            android:inputType="numberDecimal"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Car Description -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:background="#FFF"
+            android:minLines="3"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/ivCarImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            android:contentDescription="Car Image" />
+
+        <!-- Select Image Button -->
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Car Image"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#0288D1"
+            android:textColor="#FFF" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Car"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</ScrollView>
